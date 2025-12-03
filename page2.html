@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>page 4 fond animé</title>
+  </head>
+
+  <body>
+   <div class="div"></div>
+
+   <style>
+    div{
+    border: solid 1px red;
+    margin: 5px;
+}
+
+/* fond animé */
+.div{
+    width: 600px;
+    height: 800px;
+    background-size: 100% 100%;
+    box-shadow: 20px 20px 10px gray;
+    animation: slider 10s linear infinite;
+    object-fit: contain;
+    
+}
+
+@keyframes slider {
+    0%   {background-image: url(media/ozaru.jpg);}
+    30%  {background-image: url(media/sasuk.jpg);}
+    60%  {background-image: url(media/star2.png);}
+    100% {background-image: url(media/vader.jpeg);}
+}
+
+img{
+    height: 300px;
+    width: 200px;
+}
+
+   </style>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style6.css">
+    <title>btn style</title>
+</head>
+<body>
+    <div class="btn">button</div>
+
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+/* button effet  */
+.btn {
+  border: none;
+  color: white;
+  background-color: #111;
+  cursor: pointer;
+  position: relative;
+  border-radius: 100px;
+  padding: 0.6em 2em;
+  letter-spacing: 0.5px;
+  width: auto;
+  font-size: 5rem;
+}
+
+.btn::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+    );
+    position: absolute;
+    top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  filter: blur(10px);
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  animation: glow-btn 2s linear infinite;
+  border-radius: 15px;
+  border-radius: 100px;
+}
+
+@keyframes glow-btn {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+
+    </style>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5.css">
+    <title>gallery</title>
+</head>
+<body>
+   <div class="container">
+    <img src="media/ozaru.jpg" alt="">
+    <img src="media/sasuk.jpg" alt="">
+    <img src="media/star2.png" alt="">
+    <img src="media/vader.jpeg" alt="">
+    <img src="media/ozaru.jpg" alt="">
+    
+   </div>
+   <style>
+    body{
+  background-color: rgb(1, 1, 51);
+}
+
+.container{
+  margin: 100px 0 0 200px;
+  width: 70%;
+  height: 450px;
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}
+
+.container img{
+  width: 10%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.684);
+  transition: all ease-in-out 0.5s;
+}
+
+.container img:hover{
+  width: 80%;
+}
+   </style>
+</body>
+</html>

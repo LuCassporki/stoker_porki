@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>shadow img</title>
+</head>
+<body>
+<div title="hello there are you jedi master ?">hover me</div>
+<div>ne fonctionne qu avec des image a fond decouper
+
+
+</div>
+<div class="ctn">
+<div class="star">
+    <code>box-shadow</code>
+    <img src="media/star2.png" alt="" class="imgg">
+</div>
+<div class="star">
+    <code>drop-shadow</code>
+    <img src="media/star2.png" alt="" class="image">
+</div>
+</div>
+<style>
+
+    body {
+    justify-content: center;
+    width: 90%;
+    height: 90vh;
+    background-color: black;
+}   
+.ctn{display: flex;
+    width: 100%;
+    height: 70vh;
+}
+.star{display: flex;
+    width: 100%;
+    height: 70vh;
+    flex-direction: column;}
+
+    div, code {
+    width: 100%;
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+img {
+    inset: 50%;
+    width: 70%;
+}
+.imgg {
+    box-shadow:0 0 1rem red;
+}
+.image {
+    border: 2px solid white;
+    filter: drop-shadow(0 0 1rem red);
+    }
+</style>
+</body>
+</html>

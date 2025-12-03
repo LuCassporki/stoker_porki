@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+     <title>cercle css</title>
+</head>
+<body>
+    <div class="container-liader">
+        <div class="round"></div>
+        <div class="round"></div>
+    </div>
+    <style>
+        body {
+  background-color: black;
+}
+
+.round {
+  width: 400px;
+  height: 400px;
+  border: 1px solid white;
+  border-radius: 41% 44% 42% 45%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation: spin 4s linear infinite;
+  -moz-animation: 4s linear infinite;
+  animation: spin 4s linear infinite;
+}
+
+.round:nth-child(2) {
+  -webkit-animation: spin 6s linear infinite;
+  -moz-animation: 6s linear infinite;
+  animation: spin 6s linear infinite;
+  border-radius: 45% 42% 44% 41%;
+}
+
+@keyframes spin {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+    </style>
+</body>
+</html>

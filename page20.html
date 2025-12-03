@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>popover</title>
+</head>
+<body>
+
+<button popovertarget="my-popover">
+    pop
+</button>
+
+<div id="my-popover" popover 
+>
+<!-- style="width: 300px; padding: 20px; background: #333; border: solid 2px white; border-radius: 50px;" -->
+ 
+This is a popover content!  
+<div class="test">may content for testing popover
+    <div class="cube"></div>
+</div>
+
+<button popovertarget="my-popover" popoverclose>Close</button>
+    
+</div>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #222;
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 2rem;
+        border: solid 5px white;
+    }
+    button {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    div[popover] {
+        box-shadow: 0 10px 20px rgba(230, 225, 225, 0.2);
+    width: 400px;
+    padding: 20px; 
+    background: #e74141; 
+    border: solid 2px white; 
+    border-radius: 50px;
+    position: absolute;
+    top: -50%;
+    left: -60%;
+}
+
+.test{
+    width: 100%;
+    height:auto;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-direction: column;
+}
+.cube{
+    width: 100px;
+    height: 100px;
+    background: green;
+    animation: rotateCube 5s linear infinite;
+    margin-top: 20px;
+}
+@keyframes rotateCube {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+</style>
+</body>
+</html>

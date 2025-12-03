@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effet de Réflexion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="image-with-reflection">
+        <img src="media/ozaru.jpg" alt="Image principale">
+    </div>
+    
+    <div class="image-with-reflection-masked">
+        <img src="media/sasuk.jpg" alt="Image avec réflexion masquée">
+    </div>
+
+    <style>
+        body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #222;
+    font-family: sans-serif;
+    gap: 50px; /* Espace entre les exemples */
+    padding: 20px;
+}
+
+/* Style commun aux images */
+img {
+    display: block;
+    width: 250px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    border: 1px solid #555;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* ======================================= */
+/* EXEMPLE 1: Utilisation de linear-gradient */
+/* ======================================= */
+.image-with-reflection {
+    position: relative; /* Pour positionner la réflexion */
+    display: inline-block; /* Pour que le div s'adapte à l'image */
+}
+
+.image-with-reflection img {
+    margin-bottom: -1px; /* Évite un petit espace entre l'image et sa réflexion */
+}
+
+.image-with-reflection::after {
+    content: '';
+    position: absolute;
+    top: 40%; /* Place la réflexion juste en dessous de l'image */
+    left: 0;
+    width: 100%;
+    height: 100%; /* Même hauteur que l'image */
+    background-image: url("media/ozaru.jpg"); /* Utilisez la même image */
+    background-size: cover; /* Assurez-vous qu'elle couvre l'espace */
+    transform: scaleY(-1); /* Retourne l'image verticalement */
+    transform-origin: top; /* L'origine de la transformation est le haut de la réflexion */
+    
+    /* Crée le dégradé de transparence pour l'effet de fondu */
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 100%);
+    mask-image: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 100%);
+    
+    opacity: 0.4; /* Ajustez l'opacité globale de la réflexion */
+}
+
+
+/* ======================================= */
+/* EXEMPLE 2: Utilisation de -webkit-box-reflect (spécifique Webkit) */
+/* C'est la plus simple, mais pas standard ! */
+/* ======================================= */
+.image-with-reflection-masked img {
+    /* Propriété spécifique aux navigateurs Webkit (Chrome, Safari, Edge basé sur Chromium) */
+    -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+    /*
+    below: la réflexion est en dessous
+        0px: pas d'espace entre l'image et la réflexion
+        linear-gradient(...): le masque de la réflexion (de transparent à 50% noir)
+        */
+    }
+    
+    /* Petite note sur -webkit-box-reflect :
+   Bien que très pratique, cette propriété n'est pas standard CSS.
+   Elle fonctionne très bien dans les navigateurs basés sur Webkit (Chrome, Safari,
+   nouveaux Edge), mais ne fonctionnera pas dans Firefox par exemple.
+   Pour une compatibilité maximale, utilisez l'approche 1.
+   */
+    </style>
+</body>
+</html>

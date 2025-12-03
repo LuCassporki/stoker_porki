@@ -1,0 +1,63 @@
+body {
+  background-color: black;
+}
+.cube {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  margin: 200px auto;
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+  transform: rotateX(30deg) rotateY(30deg);
+}
+
+.face,
+.back,
+.left,
+.right,
+.top,
+.bottom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border: solid 1px red;
+}
+.face {
+    background-image: url(media/ozaru.jpg);
+    transform: rotateY(0deg) translateZ(250px);
+}
+
+.back {
+    background-image: url(media/sasuk.jpg);
+    transform: rotateY(180deg) translateZ(250px);
+}
+.left {
+    background-image: url(media/star2.png);
+    transform: rotateY(-90deg) translateZ(250px);
+    background-size: 35% 35%;
+    background-repeat: repeat;
+}
+.right {
+    transform: rotateY(90deg) translateZ(250px);
+    background-image: url(media/vader.jpeg);
+}
+.bottom {
+    transform: rotateX(-90deg) translateZ(250px);
+    background-image: url(media/star2.png);
+    background-size: 50% 50%;
+    background-repeat: repeat;
+}
+.top {
+  background-image: url(media/1oror3.avif);
+  transform: rotateX(90deg) translateZ(250px);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}

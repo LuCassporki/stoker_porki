@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>position</title>
+</head>
+<body>
+    
+    <div class="fix">fixed</div>
+    <div class="sticky">sticky</div>
+    <div class="absolute">absolut</div>
+
+    <div class="parent">parent
+        <div class="relatif">relatif</div>
+    </div>
+
+    <div class="static">static</div>
+<div class="element">element</div>
+<div class="element">element</div>
+<div class="element">element</div>
+
+<style>
+    body {
+        
+        margin: 0;
+        padding: 0;
+        height: 300vh;
+        background: #111;
+        background-image: url(media/1oror3.avif);
+        background-size: cover;
+       background-attachment: fixed;  
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 2rem;
+        border: solid 5px white;
+    }
+    .element{
+        width: 200px;
+        height: 200px;
+        background: green;
+        background-image: url(media/sasuk.jpg);
+        background-size: cover;
+        margin: 500px auto;
+    }
+    .fix{
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        background: red;
+        background-image: url(media/mdn-info.png);
+        background-size: cover;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+    .sticky{
+        width: 60%;
+        height: 2%;
+        background: blue;
+        background-image: url(media/ozaru.jpg);
+        position: sticky;
+        top: 10px;
+        left: 25%;
+        margin-top: 400px;
+    }
+    .absolute{
+        width: 200px;
+        height: 200px;
+        background: gray;
+        background-image: url(media/mdn-info.png);
+        background-size: cover;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+    .parent{
+        width: 400px;
+        height: 400px;
+        background: blueviolet;
+        position: absolute;
+        top: 50%;
+        right: 0%;
+    }
+    .relatif{
+        width: 200px;
+        height: 200px;
+        background: purple;
+        background-image: url(media/vader.jpeg);
+        background-size: cover;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+    }
+    .static{
+        background-image: url(media/star2.png);
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        position: static;
+        top: 50px;
+        left: 100px;
+    }
+    
+</style>
+</body>
+</html>

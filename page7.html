@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style7.css">
+    <title>glowing</title>
+</head>
+<body>
+    <p class="shine-text">glowing text effect</p>
+    <style>
+        
+
+
+
+body{
+    background: black;
+}
+
+
+
+
+
+
+.shine-text{
+    
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    /* placer le text */
+    padding: 12px 48px; 
+    color: #aaa;
+    font-size: 5rem;
+    font-weight: 600;  
+    text-decoration:none;
+    white-space: nowrap;
+    background: linear-gradient(to right, #9f9f9f 0%, #fff 10%, #868686 20%); /* couleur du text */
+    background-position: 0; /* position du gradient */ 
+    -webkit-background-clip: text; /* pour que le text soit transparent */
+    background-clip: text; /* pour que le text soit transparent */
+    -webkit-text-fill-color:transparent; 
+    animation: shine 3s infinite linear; /* animation */
+    animation-fill-mode: none; /* pour que l'animation ne se termine pas */
+    }
+    
+    
+    
+    
+    @keyframes shine{
+        0%{ 
+            background-position: 0px; /* position de départ */
+        }
+        
+        60%{
+            background-position: 600px; /* position d'arrivée */
+        }
+        100%{
+            background-position: 0px; /* position finale */
+        }
+    }
+        
+    </style>
+</body>
+</html>
