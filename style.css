@@ -5,6 +5,11 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: black;
@@ -12,36 +17,38 @@ body {
 
 .z1 {
   border: double red 10px;
+  width: 100%;
 }
 
-.h1{
+.navint {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  background-color: red;
-  
-}
-h1 {
-  position: sticky;
-  top: 0;
-  background-color: red;
-  color: aliceblue;
-  font-size: 5rem;
   width: 50%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  translate: -50%;
+  z-index: 999;
 }
-.h1 button {
+.navint button {
   width: 100px;
   height: 100px;
   border-radius: 50px 50px;
   font-size: 1.5rem;
-  background-color: rgb(44, 44, 44);
-  border: 4px solid black;
+  background-color: rgba(44, 44, 44, 0.007);
+  border: 4px solid rgba(128, 128, 128, 0.26);
   cursor: pointer;
   color: white;
 }
-
+h1 {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  color: aliceblue;
+  font-size: 5rem;
+  width: 100%;
+}
 
 .z2 {
   border: double blue 10px;
@@ -51,88 +58,85 @@ h1 {
   flex-wrap: wrap;
 }
 span {
-    height: auto;
+  height: auto;
 }
 
 :root {
-    --span-width: 14%;
-    --color--border: rgba(128, 128, 128, 0.181);
-    
+  --span-width: 14%;
+  --color--border: rgba(128, 128, 128, 0.181);
 }
 .so {
-    width: var(--span-width);
-    border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
 .outil {
-    width: var(--span-width);
-    border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
 .download {
-    width: var(--span-width);
-    border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
 .diagram {
-    width: var(--span-width);
-    border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
 .outil-site {
-    width: var(--span-width);
-    border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
 
 .ac {
-    width: var(--span-width);
-    border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
 .ast {
-    width: var(--span-width);
-    border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
 .ja {
-    width: var(--span-width);
-    border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
 .doc {
-    width: var(--span-width);
-    border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
 
 .txt {
-    width: var(--span-width);
-    border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
 
 .vt {
-    width: var(--span-width);
-    border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
 
 .bdd {
-    width: var(--span-width);
-    border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
 .img {
-    width: var(--span-width);
-    border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
 .pdf {
-    width: var(--span-width);
-    border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
 .jeux {
-    width: var(--span-width);
-    border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
 .secu {
-    width: var(--span-width);
-  border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
 .as {
-    width: var(--span-width);
-  border: double var( --color--border) 10px;
+  width: var(--span-width);
+  border: double var(--color--border) 10px;
 }
-
-
 
 h2 {
   color: yellow;
@@ -151,26 +155,24 @@ button {
 }
 
 span button {
-    width: 180px;
+  width: 180px;
   height: 100px;
   font-size: 1.5rem;
   color: red;
 }
 span button:hover {
-    background-color: yellow;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    background: #000;
-    color: skyblue;
-    perspective: 1000px;
-    
+  background-color: yellow;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #000;
+  color: skyblue;
+  perspective: 1000px;
 }
- button:hover {
-    background-color: yellow;
-    color: black;
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    
+button:hover {
+  background-color: yellow;
+  color: black;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
