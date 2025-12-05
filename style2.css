@@ -1,155 +1,164 @@
-@media(max-width: 740px) {
-    body {
-        background-color: rgb(56, 55, 55);
-    }
-h1 {
-  color: rgb(240, 237, 78);
-  font-size: 3rem;
-}
-    
-.z1 {
-  border: double white 10px;
-}
+@media (max-width: 740px) {
+  body {
+    background-color: rgb(56, 55, 55);
+  }
 
+ 
 
-button {
+  .navint {
+    display: flex;
+    justify-content: right;
+    width: auto;
+    position: fixed;
+    top: 0;
+    left: 88%;
+    z-index: 999;
+  }
+  .navint button {
+    width: 80px;
+    height: 50px;
+    border-radius: 50px 50px;
+    font-size: 0.8rem;
+    background-color: rgba(44, 44, 44, 0.007);
+    border: 4px solid rgba(128, 128, 128, 0.26);
+    cursor: pointer;
+    color: white;
+  }
+
+  h1 {
+    color: rgb(240, 237, 78);
+    font-size: 3rem;
+  }
+
+  .z1 {
+    border: double white 10px;
+  }
+
+  button {
     margin-top: 5px;
-  width: 30%;
-  height: 50px;
-  background-color: rgb(44, 44, 44);
-  border: 4px solid rgb(240, 104, 104);
-  border-radius: 50px;
-  cursor: pointer;
-  color: white;
-  font-size: 1rem;
-}
+    width: 30%;
+    height: 50px;
+    background-color: rgb(44, 44, 44);
+    border: 4px solid rgb(240, 104, 104);
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+  }
 
- button:hover {
+  button:hover {
     background-color: yellow;
     color: black;
     font-size: 1.3rem;
     text-transform: uppercase;
     font-weight: bold;
-    
-}
+  }
 
-h2 {
-  color: skyblue;
-  font-size: 1rem;
-}
+  h2 {
+    color: skyblue;
+    font-size: 1rem;
+  }
 
-.z2 {
-  border: double blue 10px;
-  margin-top: 5px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-span {
+  .z2 {
+    border: double blue 10px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  span {
     height: auto;
-}
+  }
 
-:root {
+  :root {
     --span-width: 33%;
     --color--border: rgba(128, 128, 128, 0.181);
-    
-}
-.so {
+  }
+  .so {
     width: var(--span-width);
-    border: double var( --color--border) 10px;
-}
-.outil {
+    border: double var(--color--border) 10px;
+  }
+  .outil {
     width: var(--span-width);
-    border: double var( --color--border) 10px;
-}
-.download {
+    border: double var(--color--border) 10px;
+  }
+  .download {
     width: var(--span-width);
-    border: double var( --color--border) 10px;
-}
-.diagram {
+    border: double var(--color--border) 10px;
+  }
+  .diagram {
     width: var(--span-width);
-    border: double var( --color--border) 10px;
-}
-.outil-site {
+    border: double var(--color--border) 10px;
+  }
+  .outil-site {
     width: var(--span-width);
-    border: double var( --color--border) 10px;
-}
+    border: double var(--color--border) 10px;
+  }
 
-.ac {
+  .ac {
     width: var(--span-width);
-    border: double var( --color--border) 10px;
-}
-.ast {
+    border: double var(--color--border) 10px;
+  }
+  .ast {
     width: var(--span-width);
-    border: double var( --color--border) 10px;
-}
-.ja {
+    border: double var(--color--border) 10px;
+  }
+  .ja {
     width: var(--span-width);
-    border: double var( --color--border) 10px;
-}
-.doc {
+    border: double var(--color--border) 10px;
+  }
+  .doc {
     width: var(--span-width);
-    border: double var( --color--border) 10px;
-}
+    border: double var(--color--border) 10px;
+  }
 
-.txt {
+  .txt {
     width: var(--span-width);
-    border: double var( --color--border) 10px;
-}
+    border: double var(--color--border) 10px;
+  }
 
-.vt {
+  .vt {
     width: var(--span-width);
-    border: double var( --color--border) 10px;
-}
+    border: double var(--color--border) 10px;
+  }
 
-.bdd {
+  .bdd {
     width: var(--span-width);
-    border: double var( --color--border) 10px;
-}
-.img {
+    border: double var(--color--border) 10px;
+  }
+  .img {
     width: var(--span-width);
-    border: double var( --color--border) 10px;
-}
-.pdf {
+    border: double var(--color--border) 10px;
+  }
+  .pdf {
     width: var(--span-width);
-    border: double var( --color--border) 10px;
-}
-.jeux {
+    border: double var(--color--border) 10px;
+  }
+  .jeux {
     width: var(--span-width);
-    border: double var( --color--border) 10px;
-}
-.secu {
+    border: double var(--color--border) 10px;
+  }
+  .secu {
     width: var(--span-width);
-  border: double var( --color--border) 10px;
-}
-.as {
+    border: double var(--color--border) 10px;
+  }
+  .as {
     width: var(--span-width);
-  border: double var( --color--border) 10px;
-}
+    border: double var(--color--border) 10px;
+  }
 
-
-
-
-
-
-
-
-span button {
+  span button {
     width: 100%;
-  height: 50px;
-  font-size: .8rem;
-  color: yellow;
-}
-span button:hover {
+    height: 50px;
+    font-size: 0.8rem;
+    color: yellow;
+  }
+  span button:hover {
     background-color: yellow;
-    font-size: .9rem;
+    font-size: 0.9rem;
     text-transform: uppercase;
     font-weight: bold;
     background: #000;
     color: skyblue;
-    /* perspective: 1000px; */
-    
-}
-
-
+  }
 }
