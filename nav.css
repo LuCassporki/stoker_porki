@@ -16,7 +16,7 @@
   transition: width 0.5s, height 0.5s, background-color 0.5s, opacity 0.5s;
 }
 .navGlob:hover {
-  width: auto;
+  width: 200px;
   height: 80vh;
   opacity: 0.9;
   background-color: black;
