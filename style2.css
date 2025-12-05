@@ -15,8 +15,8 @@
     z-index: 999;
   }
   .navint button {
-    width: 80px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50px 50px;
     font-size: 0.8rem;
     background-color: rgba(44, 44, 44, 0.007);
@@ -27,7 +27,7 @@
 
   h1 {
     color: rgb(240, 237, 78);
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .z1 {
