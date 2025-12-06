@@ -139,7 +139,8 @@ span {
   border: double var(--color--border) 10px;
 }
 .img {
-  width: var(--span-width);
+  /* width: var(--span-width); */
+  width: 30%;
   border: double var(--color--border) 10px;
 }
 .pdf {
@@ -147,7 +148,8 @@ span {
   border: double var(--color--border) 10px;
 }
 .jeux {
-  width: var(--span-width);
+  /* width: var(--span-width); */
+  width: 30%;
   border: double var(--color--border) 10px;
 }
 .secu {
@@ -156,6 +158,11 @@ span {
 }
 .as {
   width: var(--span-width);
+  border: double var(--color--border) 10px;
+}
+.deploiment {
+  /* width: var(--span-width); */
+  width: 30%;
   border: double var(--color--border) 10px;
 }
 
