@@ -9,10 +9,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: black;
+  cursor: crosshair;
 }
 
 h1 {
@@ -165,9 +166,6 @@ span {
   width: 30%;
   border: double var(--color--border) 10px;
 }
-
-
-
 
 span button:hover {
   background-color: yellow;
